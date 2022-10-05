@@ -86,5 +86,5 @@ document.getElementById('sumOfArray').innerHTML = sumOfNumbers;
 let doubledNumbers = numbers.map(number => number *2);
 document.getElementById('multiplied').innerHTML = doubledNumbers;
 // Step 7: Use the map and reduce array methods to sum the array elements after multiplying each element by two.  Assign the result to the HTML element with an ID of "sumOfMultiplied"
-let sumDoubledNumbers = doubledNumbers.reduce((accumulator, number)) => accumulator += number,0);
+let sumDoubledNumbers = doubledNumbers.reduce((accumulator, number) => accumulator += number,0);
 document.getElementById('sumOfMultiplied').innerHTML = sumDoubledNumbers;
