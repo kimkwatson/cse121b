@@ -5,8 +5,10 @@
 // Step 1: Using function declaration, define a function named add that takes two arguments, number1 and number2
 // Step 2: In the function, return the sum of the parameters number1 and number2
 function add(number1, number2) {
-    sum = number1 + number2;
-    return sum
+    const inputElement = number1 + number2;
+    const outputElement = document.getElementById('sum');
+    outputElement.innerHTML = inputElement.value;
+    return outputElement
 }
 
 // Step 3: Step 3: Using function declaration, define another function named addNumbers that gets the values of two HTML form controls with IDs of addend1 and addend2. Pass them to the add function
@@ -16,7 +18,6 @@ function addNumbers() {
     add(addend1, addend2);
 }
 // Step 4: Assign the return value to an HTML form element with an ID of sum
-document.getElementById('sum').innerHTML = buttonElement.value;
 
 
 // Step 5: Add a "click" event listener to the HTML button with an ID of addNumbers that calls the addNumbers function
@@ -33,7 +34,7 @@ function subtractNumbers() {
     let subtrahend = document.querySelector("subtrahend");
     subtract(minuend, subtrahend);
 }
-const subtractElement = document.getElementById("difference");
+const subtractElement = document.getElementById("difference").innerHTML;
 subtractElement.addEventListener("click", subtractNumbers);
 // Step 7: Using arrow functions, repeat Steps 1-5 with new functions named multiply and mulitplyNumbers and HTML form controls with IDs of factor1, factor2, product and multiplyNumbers
 const multiply = (number1, number2) => {
@@ -55,13 +56,16 @@ multiplyElement.addEventListener("click", multiplyNumbers);
 /* BUILT-IN METHODS */
 
 // Step 1: Declare and instantiate a variable of type Date to hold the current date
+var currentDate = Date();
 
 // Step 2: Declare a variable to hold the current year
+var currentYear;
 
 // Step 3: Using the variable declared in Step 1, call the built-in getFullYear() method/function and assign it to the variable declared in Step 2
+currentYear = Date.prototype.getFullYear();
 
 // Step 4: Assign the current year variable to an HTML form element with an ID of year
-
+document.getElementById('year').innerHTML = currentYear;
 
 /* ARRAY METHODS */
 
