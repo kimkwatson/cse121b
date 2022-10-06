@@ -72,7 +72,7 @@ divideButton.addEventListener("click", divideNumbers);
 // Step 3: Using the variable declared in Step 1, call the built-in getFullYear() method/function and assign it to the variable declared in Step 2
 
 // Step 4: Assign the current year variable to an HTML form element with an ID of year
-document.querySelector('#year').innerHTML = new Date().getFullYear;
+document.querySelector('#year').innerHTML = new Date().getFullYear();
 
 /* ARRAY METHODS */
 
