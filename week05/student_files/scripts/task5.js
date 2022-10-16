@@ -117,23 +117,23 @@ function reset() {
 function sortBy() {
     reset();
     let sortedList = [];
-    const value = changeElement.options[changeElement.selectedIndex].value;
-    //const listOrder = document.querySelector('#sortBy');
-    //const value = listOrder.value;
+    //const value = changeElement.options[changeElement.selectedIndex].value;
+    const listOrder = document.querySelector('#sortBy');
+    const value = listOrder.value;
     if (value === 'templeNameAscending') {
         function compare(a, b) {
-            if (a.name > b.name) {
+            if (a.templeName > b.templeName) {
               return 1;
-            } else if (a.name < b.name) {
+            } else if (a.templeName < b.templeName) {
               return -1;
             } else return 0;
           }
         sortedList = templesList.sort(compare);
     } else {
         function compare(a, b) {
-            if (a.name > b.name) {
+            if (a.templeName > b.templeName) {
               return -1;
-            } else if (a.name < b.name) {
+            } else if (a.templeName < b.templeName) {
               return 1;
             } else return 0;
           }
