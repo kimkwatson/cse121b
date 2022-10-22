@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble Scorecard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a id="logo_link">
+            <img class="logo" src="images/scrabble-word.jpg" alt="Scrabble">
+        </a>
+    </header>
+    <div>
+        <h1>SCRABBLE SCORECARD</h1>
+        <p id="definition"></p>
+    </div>
+    <main>
+        <section id="player1">
+            <article>
+                <h2>Player 1</h2>
+                <form>
+                    <label for="word">Word:</label>
+                    <input type="text" id="word" name="word">
+                    <br>
+                    <label for="points">Points:</label>
+                    <input type="text" id="points" name="points">
+                </form>
+                <div>
+                    <input type="button" id="button" value="Add Word">
+                </div>
+                <div>
+                    <p>
+                        Total: <span id="total"></span>
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section id="player1-display">
+            <div>
+                <h2>Words</h2>
+                <ul id="words"></ul>
+            </div>
+        </section>
+        <section id="player2">
+            <article>
+                <h2>Player 2</h2>
+                <form>
+                    <label for="word">Word:</label>
+                    <input type="text" id="word2" name="word">
+                    <br>
+                    <label for="points">Points:</label>
+                    <input type="text" id="points2" name="points">
+                </form>
+                <div>
+                    <input type="button" id="button2" value="Add Word">
+                </div>
+                <div>
+                    <p>
+                        Total: <span id="total2"></span>
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section id="player2-display">
+            <div>
+                <h2>Words</h2>
+                <ul id="words2"></ul>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/scorecard.js"></script>
+</body>
+</html>
